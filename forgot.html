@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Registration</title>
+  <title>Forgot password</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -58,7 +58,7 @@
           <li><a class="active" href="team.html">Team</a></li>
           <li><a href="">Blog</a></li>
           <li><a href="login.html">Login</a></li>
-          <li><a href="">Register</a></li>
+          <li><a href="register.html">Register</a></li>
           <li><a href="contact.html">Contact Us</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
@@ -74,10 +74,10 @@
       <div class="container">
 
         <div class="d-flex justify-content-between align-items-center">
-          <h2>Register</h2>
+          <h2>Forgot password</h2>
           <ol>
             <li><a href="index.html">Home</a></li>
-            <li>Register</li>
+            <li>Forgot password</li>
           </ol>
         </div>
 
@@ -143,6 +143,37 @@
         color: #4b6978;
         font-size: 13px;
       }
+
+      .art_login_img {
+        width: 300px;
+        border: 1px solid #80808054;
+      }
+
+      .art_terms {
+        margin-top: 1em;
+      }
+
+      .art_terms>a {
+        color: #4b6978;
+        font-size: 13px;
+      }
+
+      .art_left_a {
+        margin-right: 2em;
+      }
+
+      .art_right_a {
+        margin-left: 2em;
+      }
+
+      .warning_icon {
+        color: orange;
+      }
+
+      .warning_div {
+        font-size: 15px;
+        color: gray;
+      }
     </style>
     <!-- ======= Team Section ======= -->
     <section class="team" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500">
@@ -151,20 +182,24 @@
         <div class="row">
 
           <div class="col-lg-6 text-center">
-            <div class="art_mc_login">
-              <input required type="text" placeholder="Name">
-              <input required type="email" placeholder="Email id">
-              <input required type="text" placeholder="Phone number">
-
+            <img class="art_login_img" src="assets/img/login2.jpg">
+            <div class="art_terms">
+              <a class="art_left_a" href="">Terms of use</a>
+              <a class="art_right_a" href="">Privacy policy</a>
             </div>
           </div>
 
           <div class="col-lg-6 text-center">
             <div class="art_mc_login">
-              <input type="text" placeholder="Username">
-              <input type="password" placeholder="password">
-              <input type="text" placeholder="Pass ID">
-              <input type="submit" value="Register">
+              <div class="warning_div">
+                <a><span class="warning_icon">&#9888;</span> Please provide the same password that used while register.
+                </a>
+              </div>
+              <input required type="email" placeholder="Registered email id">
+              <input type="submit" value="Submit">
+              <div class="to_reg_div">
+                <a href="register.html">Don't have an account? Register here </a>
+              </div>
               <div class="to_reg_div">
                 <a href="login.html">Already have an account? Login here </a>
               </div>
